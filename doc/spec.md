@@ -17,17 +17,17 @@ Uso: `secex-importa-padronizados <tipo> <destino> <entrada> [...]`
 Onde:
  - `tipo`: pode ser `estadual` ou `municipal` (obrigatório)
  - `destino`: caminho para a tabela de destino no banco de dados (obrigatório)
-    - Suporte somente a Sqlite
-    - A sintaxe para a especificação do destino é dada por `<arquivo> # [<database> .] <tabela>`
-    - Exemplos: `padronizados.db#main.estadual`, `padronizados.db#estadual`
-    - Esta especificação é compatível, futuramente, com [Database
+    - suporte somente a Sqlite
+    - a sintaxe para a especificação do destino é dada por `<arquivo> # [<database> .] <tabela>`
+    - exemplos: `padronizados.db#main.estadual`, `padronizados.db#estadual`
+    - esta especificação é compatível, futuramente, com [Database
       URIs][uri-db], assumindo `db:sqlite:/`
  - `entrada`: caminho para um ou mais arquivos padronizados
- -  - Os arquivos devem ser (ou seguir o formato dos) obtidos no [site][arquivos] oficial
-    - Suporte a `*.zip`, `*.txt` (fixed) e `*.csv`
-    - As árvores comprimidas (`*.zip`) poderão ser recursivas, isto é, poderão ter internamente
+    - os arquivos devem ser (ou seguir o formato dos) obtidos no [site][arquivos] oficial
+    - suporte a `*.zip`, `*.txt` (fixed) e `*.csv`
+    - as árvores comprimidas (`*.zip`) poderão ser recursivas, isto é, poderão ter internamente
       pastas e até outras árvores comprimidas
-    - O reconhecimento do formato do arquivo deve ser feito pelo nome do arquivo
+    - o reconhecimento do formato do arquivo deve ser feito pelo nome do arquivo
 
 Exemplos:
 
