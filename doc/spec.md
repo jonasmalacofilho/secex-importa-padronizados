@@ -52,9 +52,10 @@ Exemplos:
 Quando necessário, o software é responsável por criar as tabelas e restrições
 no banco de dados de destino.
 
-Ele também precisa evitar a duplicação de dados; para isso, ele poderá
-abortar a operação, adaptá-la (por exemplo, ignorando os novos dados) ou emtir um
-alerta de potencial problema, além de qualquer combinação das ações anteriores.
+Ele também precisa evitar a duplicação de dados, se isso for possível; é necessário primeiro
+verificar se os arquivos disponibilizados foram ou não agregados.  Caso seja possível e necessário
+deduplicá-los, o software poderá abortar a operação, adaptá-la (por exemplo, ignorando os
+novos dados) ou emtir um alerta de potencial problema, além de qualquer combinação das ações anteriores.
 
 ## Outras restrições
 
