@@ -56,13 +56,6 @@ Ele também precisa evitar a duplicação de dados; para isso, ele poderá
 abortar a operação, adaptá-la (por exemplo, ignorando os novos dados) ou emtir um
 alerta de potencial problema, além de qualquer combinação das ações anteriores.
 
-Os dados devem ser salvos codificados em Latin-1 ou UTF-8.
-Entretanto, o banco de dados será usado pelo Microsoft Excel em um sistema em Latin-1,
-e portanto deverá estar configurado de forma que funcione com este software via OLE.
-Uma observação adicional mas relevante é que no Windows a codificação do "Prompt" é,
-nas configurações de fábrica, diferente da dos demais programas; isso não deve impactar
-a correta importação dos dados.
-
 ## Outras restrições
 
 O tempo necessário para a importação de todos os dados disponíveis deve ser razoável,
