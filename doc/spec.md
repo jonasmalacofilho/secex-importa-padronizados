@@ -28,6 +28,8 @@ Onde:
     - as árvores comprimidas (`*.zip`) poderão ser recursivas, isto é, poderão ter internamente
       pastas e até outras árvores comprimidas
     - o reconhecimento do formato do arquivo deve ser feito pelo nome do arquivo
+    - o reconhecimento do sentido (importação ou exportação) deve ser feito pelo nome do
+      arquivo (`IMP` ou `EXP`)
 
 Exemplos:
 
@@ -52,10 +54,16 @@ Exemplos:
 Quando necessário, o software é responsável por criar as tabelas e restrições
 no banco de dados de destino.
 
+As tabelas deverão ter os mesmo campos da especificação dos arquivos padronizados, mas seus
+nomes deverão ser salvos em minúsculas.  Todas as colunas deverão ter tipo inteiro.
+
 Ele também precisa evitar a duplicação de dados, se isso for possível; é necessário primeiro
 verificar se os arquivos disponibilizados foram ou não agregados.  Caso seja possível e necessário
 deduplicá-los, o software poderá abortar a operação, adaptá-la (por exemplo, ignorando os
 novos dados) ou emtir um alerta de potencial problema, além de qualquer combinação das ações anteriores.
+
+Também pode ser útil salvar, em tabelas auxiliares, o nome do arquivo original e a data da importação.
+Cada registro das tabelas de destino pode terminar com referências a isso.
 
 ## Outras restrições
 
